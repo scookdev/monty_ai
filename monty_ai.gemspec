@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/main/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
-  spec.files = Dir.glob("{bin,lib}/**/*") + %w[LICENSE README.md]
+  spec.files = Dir.glob("{bin,lib}/**/*") + %w[LICENSE.txt README.md]
   spec.bindir = "bin"
   spec.executables = ["monty"]
   spec.require_paths = ["lib"]
