@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name = "monty-ai"
   spec.version = MontyAI::VERSION
   spec.authors = ["Steve Cook"]
-  spec.email = ["stevenbradleycook@gmail.com"]
+  spec.email = ["stevorevo@duck.co"]
 
   spec.summary = "CLI tool to explain code using AI"
   spec.description = "MontyAI is an intelligent code explanation tool that uses AI to help you understand code faster."
@@ -19,9 +19,9 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/main/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
-  spec.files = Dir.glob("{bin,lib}/**/*") + %w[LICENSE.txt README.md]
-  spec.bindir = "bin"
-  spec.executables = ["monty"]
+  spec.files = Dir.glob("{exe,lib}/**/*") + %w[LICENSE.txt README.md]
+  spec.bindir = "exe"
+  spec.executables = ["monty-ai"]
   spec.require_paths = ["lib"]
 
   # Dependencies
