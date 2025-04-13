@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# rubocop:disable Metrics/BlockLength
 RSpec.describe MontyAI::CLI do
   let(:cli) { described_class.new }
   let(:test_code) { "puts 'Hello, World!'" }
@@ -27,7 +28,9 @@ RSpec.describe MontyAI::CLI do
     it "handles errors when file doesn't exist" do
       expect do
         cli.explain("non_existent_file.rb")
-      end.to output(/Error: Failed to read file: File not found: non_existent_file.rb/).to_stdout.and raise_error(SystemExit)
+      end
+        .to output(/Error: Failed to read file: File not found: non_existent_file.rb/)
+        .to_stdout.and raise_error(SystemExit)
     end
 
     it "explains code from stdin when no file is provided and stdin is not a tty" do
@@ -52,3 +55,4 @@ RSpec.describe MontyAI::CLI do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
