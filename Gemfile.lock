@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    monty-ai (0.1.0)
+    monty-ai (0.3.0)
       thor (~> 1.2)
 
 GEM
