@@ -6,7 +6,9 @@
 
 ## 🚀 Overview
 
-MontyAI is an intelligent code explanation tool that uses AI to help you understand code faster. Simply point MontyAI at a code file, and it will provide a clear, concise explanation of what the code does.
+MontyAI is an intelligent code explanation tool that uses AI to help you
+understand code faster. Simply point MontyAI at a code file, and it will provide
+a clear, concise explanation of what the code does.
 
 ## 🛠️ Installation
 
@@ -74,7 +76,8 @@ monty version
 
 ## ⚙️ Configuration
 
-MontyAI uses OpenAI or Anthropic APIs for code explanation. Set your API key in an environment variable:
+MontyAI uses OpenAI or Anthropic APIs for code explanation. Set your API key in
+an environment variable:
 
 ```bash
 # For OpenAI (default)
