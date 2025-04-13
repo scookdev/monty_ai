@@ -37,19 +37,19 @@ gem install monty-ai
 Explain a file:
 
 ```bash
-monty explain path/to/file.rb
+monty-ai explain path/to/file.rb
 ```
 
 Pipe code to MontyAI:
 
 ```bash
-cat path/to/file.rb | monty explain
+cat path/to/file.rb | monty-ai explain
 ```
 
 ### Example
 
 ```bash
-monty explain lib/my_app/parser.rb
+monty-ai explain lib/my_app/parser.rb
 ```
 
 Output:
@@ -71,7 +71,7 @@ processing methods based on the file's content type.
 ### Check Version
 
 ```bash
-monty version
+monty-ai version
 ```
 
 ## ⚙️ Configuration
