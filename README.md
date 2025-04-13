@@ -4,9 +4,11 @@
 
 # MontyAI
 
+## 🚀 Overview
+
 MontyAI is an intelligent code explanation tool that uses AI to help you understand code faster. Simply point MontyAI at a code file, and it will provide a clear, concise explanation of what the code does.
 
-## Installation
+## 🛠️ Installation
 
 Add this line to your application's Gemfile:
 
@@ -26,7 +28,7 @@ Or install it yourself as:
 gem install monty-ai
 ```
 
-## Usage
+## 💡 Usage
 
 ### Basic Usage
 
@@ -70,7 +72,7 @@ processing methods based on the file's content type.
 monty version
 ```
 
-## Configuration
+## ⚙️ Configuration
 
 MontyAI uses OpenAI or Anthropic APIs for code explanation. Set your API key in an environment variable:
 
@@ -82,13 +84,30 @@ export OPENAI_API_KEY=your_api_key_here
 export ANTHROPIC_API_KEY=your_api_key_here
 ```
 
-## Development
+## 📋 Requirements
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+- Ruby 3.0+
+- OpenAI API Key
+
+## 🧪 Development
+
+```bash
+# Clone the repository
+git clone https://github.com/scookdev/mitch_ai.git
+
+# Install dependencies
+bundle install
+
+# Run tests
+bundle exec rspec
+
+# Run linter
+bundle exec rubocop
+```
 
 To install this gem onto your local machine, run `bundle exec rake install`.
 
-## Roadmap
+## 🗺️ Roadmap
 
 Future versions will include:
 
@@ -97,10 +116,25 @@ Future versions will include:
 - Interactive TTY interface
 - Keyboard navigation
 
-## Contributing
+## 🤝 Contributing
 
-Bug reports and pull requests are welcome on GitHub at <https://github.com/scookdev/monty_ai>.
+Contributions are welcome! Please check out our [Contributing Guidelines](CONTRIBUTING.md).
 
-## License
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## 🙌 Acknowledgments
+
+- Powered by OpenAI
+- Inspired by the need for intelligent code reviews
+
+## 💬 Support
+
+If you encounter any problems or have suggestions, please [open an issue](https://github.com/scookdev/monty_ai/issues).

@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.email = ["stevenbradleycook@gmail.com"]
 
   spec.summary = "CLI tool to explain code using AI"
-  spec.description = "A command-line tool that uses AI to explain code"
-  spec.homepage = "https://github.com/yourusername/monty-ai"
+  spec.description = "MontyAI is an intelligent code explanation tool that uses AI to help you understand code faster."
+  spec.homepage = "https://github.com/scookdev/monty_ai"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.4.2"
 
