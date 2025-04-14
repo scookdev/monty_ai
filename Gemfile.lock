@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    monty-ai (0.3.0)
+    monty-ai (0.4.0)
       pastel (~> 0.8.0)
       rouge (~> 4.0)
       thor (~> 1.2)

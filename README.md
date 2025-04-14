@@ -8,7 +8,7 @@
 
 MontyAI is an intelligent code explanation tool that uses AI to help you
 understand code faster. Simply point MontyAI at a code file, and it will provide
-a clear, concise explanation of what the code does.
+a clear, concise explanation of what the code does. Features syntax highlighting.
 
 ## 🛠️ Installation
 
@@ -114,7 +114,6 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 Future versions will include:
 
-- Syntax highlighting
 - Multiple explanation formats (line-by-line, summary, concept)
 - Interactive TTY interface
 - Keyboard navigation
