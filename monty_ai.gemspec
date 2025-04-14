@@ -30,6 +30,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency "pastel", "~> 0.8.0" # For terminal colors
   spec.add_dependency "rouge", "~> 4.0" # For syntax highlighting
   spec.add_dependency "thor", "~> 1.2"
+  spec.add_dependency "tty-box", "~> 0.7.0"
+  spec.add_dependency "tty-pager", "~> 0.14.0"
+  spec.add_dependency "tty-screen", "~> 0.8.1"
+  spec.add_dependency "tty-spinner", "~> 0.9.3"
 
   # Development dependencies
   spec.add_development_dependency "bundler", "~> 2.0"

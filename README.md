@@ -52,6 +52,30 @@ cat path/to/file.rb | monty-ai explain
 monty-ai explain lib/my_app/parser.rb
 ```
 
+# Use TTY interface in terminal, text in pipes
+
+```bash
+monty-ai explain example.rb
+```
+
+# Force TTY interface
+
+```bash
+monty-ai explain example.rb --format=tty
+```
+
+# Use plain text format
+
+```bash
+monty-ai explain example.rb --format=text
+```
+
+# Output JSON format
+
+```bash
+monty-ai explain example.rb --format=json
+```
+
 Output:
 
 ```
