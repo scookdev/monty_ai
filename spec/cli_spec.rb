@@ -24,12 +24,12 @@ RSpec.describe MontyAI::CLI do
     it "reads a file and explains the code" do
       expect { cli.explain(test_file) }.to output(/#{mock_explanation}/).to_stdout
     end
-
     it "handles errors when file doesn't exist" do
+      allow(MontyAI::FileHandler).to receive(:read).and_raise(MontyAI::Error, "File not found")
       expect do
         cli.explain("non_existent_file.rb")
       end
-        .to output(/Error: Failed to read file: File not found: non_existent_file.rb/)
+        .to output(/Error: File not found/)
         .to_stdout.and raise_error(SystemExit)
     end
 

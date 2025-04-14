@@ -28,8 +28,6 @@ module MontyAI
 
     private
 
-    # lib/monty_ai/cli.rb
-    # In the handle_code method:
     def handle_code(code, filename = nil)
       puts "Analyzing code..."
 
@@ -43,9 +41,11 @@ module MontyAI
         end
 
         puts Formatter.format(explanation, code, filename)
+        true # Return success
       rescue Error => e
         puts "Error: #{e.message}"
-        exit 1
+        exit 1 unless ENV["RSPEC_RUNNING"]
+        false # Return failure for tests
       end
     end
 

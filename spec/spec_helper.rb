@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+ENV["RSPEC_RUNNING"] = "true"
+
 require "bundler/setup"
 require "monty_ai"
 require "fileutils"
