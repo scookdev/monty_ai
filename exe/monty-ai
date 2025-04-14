@@ -1,6 +1,10 @@
-#!/usr/bin/env ruby
+# rubocop:disable Naming/FileName
+# frozen_string_literal: true
+
+# !/usr/bin/env ruby
 
 require "bundler/setup"
 require "monty_ai"
 
 MontyAI::CLI.start(ARGV)
+# rubocop:enable Naming/FileName

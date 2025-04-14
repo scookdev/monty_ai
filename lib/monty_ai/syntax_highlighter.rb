@@ -4,6 +4,7 @@ require "rouge"
 require "pastel"
 
 module MontyAI
+  # Class SyntaxHighlighter adds highlighting to code that's rendered
   class SyntaxHighlighter
     def initialize
       @pastel = Pastel.new
@@ -18,30 +19,20 @@ module MontyAI
     def detect_language(filename)
       extension = File.extname(filename).downcase
 
-      case extension
-      when ".go"
-        :go
-      when ".rb"
-        :ruby
-      when ".js"
-        :javascript
-      when ".jsx"
-        :react_javascript
-      when ".py"
-        :python
-      when ".java"
-        :java
-      when ".php"
-        :php
-      when ".rs"
-        :rust
-      when ".ts"
-        :typescript
-      when ".tsx"
-        :react_typescript
-      else
-        :text
-      end
+      language_map = {
+        ".go" => :go,
+        ".rb" => :ruby,
+        ".js" => :javascript,
+        ".jsx" => :react_javascript,
+        ".py" => :python,
+        ".java" => :java,
+        ".php" => :php,
+        ".rs" => :rust,
+        ".ts" => :typescript,
+        ".tsx" => :react_typescript
+      }
+
+      language_map[extension] || :text
     end
   end
 end
