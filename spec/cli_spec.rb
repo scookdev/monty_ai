@@ -12,7 +12,8 @@ RSpec.describe MontyAI::CLI do
     FileUtils.mkdir_p(File.dirname(test_file))
     File.write(test_file, test_code)
 
-    # Stub AI client
+    # AI client stubs
+    allow_any_instance_of(MontyAI::Configuration).to receive(:api_key).and_return("TEST-KEY")
     allow_any_instance_of(MontyAI::AIClient).to receive(:explain_code).and_return(mock_explanation)
   end
 
