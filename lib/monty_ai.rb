@@ -4,6 +4,7 @@ require "monty_ai/version"
 require "monty_ai/cli"
 require "monty_ai/ai_client"
 require "monty_ai/file_handler"
+require "monty_ai/syntax_highlighter"
 require "monty_ai/formatter"
 
 # @!parse

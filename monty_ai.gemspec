@@ -27,6 +27,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Dependencies
+  spec.add_dependency "pastel", "~> 0.8.0" # For terminal colors
+  spec.add_dependency "rouge", "~> 4.0" # For syntax highlighting
   spec.add_dependency "thor", "~> 1.2"
 
   # Development dependencies
