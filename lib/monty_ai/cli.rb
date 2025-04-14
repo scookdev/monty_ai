@@ -28,6 +28,8 @@ module MontyAI
 
     private
 
+    # lib/monty_ai/cli.rb
+    # In the handle_code method:
     def handle_code(code, filename = nil)
       puts "Analyzing code..."
 
@@ -40,7 +42,7 @@ module MontyAI
           puts ""
         end
 
-        puts Formatter.format(explanation)
+        puts Formatter.format(explanation, code, filename)
       rescue Error => e
         puts "Error: #{e.message}"
         exit 1
